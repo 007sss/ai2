@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>目錄選單範例</title>
+    <style>
+        /* 限制廣告輪播的尺寸 */
+        #advertisementCarousel {
+            max-width: 500px;
+            max-height: 600px;
+            margin: auto; /* 使其置中 */
+        }
+        /* 限制卡片圖片的尺寸 */
+        .card-img-top {
+            width: 450px;
+            height: 300px;
+            object-fit: cover; /* 確保圖片不變形 */
+        }
+         /* 調整標題樣式 */
+         .navbar-brand {
+            font-size: 2.0rem; /* 加大標題 */
+            font-weight: bold;  /* 加粗標題 */
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/RARS_18%2B.svg" alt="LOGO" class="d-inline-block align-text-top" style="width: 50px; height: 50px;">
+            性福網
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="切換導航">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">首頁</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">想喝茶</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">想吃飯</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">聯絡我們</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-4">
+    <!-- 廣告輪播 -->
+    <div id="advertisementCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://cdn2.ettoday.net/images/7607/d7607780.jpg" class="d-block w-100" alt="廣告1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn2.ettoday.net/images/7630/d7630110.jpg" class="d-block w-100" alt="廣告2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://attach.setn.com/newsimages/2024/01/07/4482729-PH.jpg" class="d-block w-100" alt="廣告3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#advertisementCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">上一個</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#advertisementCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">下一個</span>
+        </button>
+    </div>
+
+    <!-- 卡片佈局 -->
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="https://attach.setn.com/newsimages/2021/06/26/3207006-PH.jpg" class="card-img-top" alt="卡片1">
+                <div class="card-body">
+                    <h5 class="card-title">小婷</h5>
+                    <p class="card-text">身高：160 cm<br>
+                        體重：50 kg<br>
+                        個性：開朗活潑，喜歡交朋友，總是帶給周圍的人歡樂。</p>
+                    <a href="#" class="btn btn-primary">點此加Line</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBYncUfPVIGJL0phRe5iVV5irLmEJuw5wXNQ&s" class="card-img-top" alt="卡片2">
+                <div class="card-body">
+                    <h5 class="card-title">雪兒</h5>
+                    <p class="card-text">身高：158 cm<br>
+                        體重：48 kg<br>
+                        個性：文靜內向，喜歡閱讀和畫畫，常常在書中尋找靈感。</p>
+                    <a href="#" class="btn btn-primary">點此加Line</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="https://thumb.photo-ac.com/97/97df8362a38bd414daa6e4dec7e00b29_t.jpeg" class="card-img-top" alt="卡片3">
+                <div class="card-body">
+                    <h5 class="card-title">小藍</h5>
+                    <p class="card-text">身高：162 cm<br>
+                        體重：54 kg<br>
+                        個性：熱情大方，喜歡戶外活動，擅長運動，是個團隊合作的好手。</p>
+                    <a href="#" class="btn btn-primary">點此加Line</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="https://media.gq.com.tw/photos/6239445a7e6557df4af61f16/1:1/w_1600%2Cc_limit/site.jpg" class="card-img-top" alt="卡片4">
+                <div class="card-body">
+                    <h5 class="card-title">妍妍</h5>
+                    <p class="card-text">身高：165 cm<br>
+                        體重：52 kg<br>
+                        個性：獨立堅強，喜歡探索新事物，經常挑戰自己。</p>
+                    <a href="#" class="btn btn-primary">點此加Line</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="https://attach.setn.com/newsimages/2020/05/09/2545156-PH.jpg" class="card-img-top" alt="卡片5">
+                <div class="card-body">
+                    <h5 class="card-title">小米</h5>
+                    <p class="card-text">身高：157 cm<br>
+                        體重：49 kg<br>
+                        個性：溫柔體貼，對朋友非常關心，常常主動提供幫助。</p>
+                    <a href="#" class="btn btn-primary">點此加Line</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="https://thumb.photo-ac.com/cb/cb52df139e3d6b14fdc28b7dc38fbb6c_t.jpeg" class="card-img-top" alt="卡片6">
+                <div class="card-body">
+                    <h5 class="card-title">樂樂</h5>
+                    <p class="card-text">身高：163 cm<br>
+                        體重：53 kg<br>
+                        個性：幽默風趣，喜歡講笑話，能讓周圍的人捧腹大笑。
+                        </p>
+                    <a href="#" class="btn btn-primary">點此加Line</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="https://assets.juksy.com/files/articles/124799/658d35824de04.jpg" class="card-img-top" alt="卡片7">
+                <div class="card-body">
+                    <h5 class="card-title">蕾蕾</h5>
+                    <p class="card-text">身高：161 cm<br>
+                        體重：51 kg<br>
+                        個性：聰明伶俐，對知識有強烈的好奇心，經常思考問題。
+                        </p>
+                    <a href="#" class="btn btn-primary">點此加Line</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNyCuvqIMpy2H95d3hHbhf6Iajvi_UzUzQ9A&s" class="card-img-top" alt="卡片8">
+                <div class="card-body">
+                    <h5 class="card-title">丫丫</h5>
+                    <p class="card-text">身高：159 cm<br>
+                        體重：47 kg<br>
+                        個性：俏皮可愛，喜歡模仿和玩鬧，總是能帶來歡樂的氣氛。</p>
+                    <a href="#" class="btn btn-primary">點此加Line</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="https://i.pinimg.com/236x/5f/1a/e7/5f1ae79366225405e74907f3dbae44ad.jpg" class="card-img-top" alt="卡片9">
+                <div class="card-body">
+                    <h5 class="card-title">琳琳</h5>
+                    <p class="card-text">身高：164 cm<br>
+                        體重：55 kg<br>
+                        個性：善解人意，擅長傾聽，是朋友們心中的「諮詢師」。</p>
+                    <a href="#" class="btn btn-primary">點此加Line</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+
